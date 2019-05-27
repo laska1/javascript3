@@ -23,3 +23,19 @@ for (var value in student){
 //3
 var olength=Object.keys(student).length
 console.log(olength);
+//4
+function hasProperty(std){
+    if(student.hasOwnProperty(std)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log(hasProperty("class"));
+//5 
+
+var output = Object.entries(student).map(([key, value]) => ({key,value}));
+console.log(output);
+
+
